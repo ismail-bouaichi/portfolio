@@ -56,6 +56,11 @@ const exp={
       position:"full stack",
       duration:"40 days"
     },
+      {
+      company:"mandi Tech Info",
+      position:"full stack",
+      duration:"6 months"
+    },
 
   ]
 }
