@@ -7,7 +7,7 @@ import { FiDownload } from 'react-icons/fi'
 const DownloadButton = () => {
   const handleDownload = (e) => {
     e.preventDefault();
-    window.open('/cv-ismail-fr[1].docx', '_blank')
+    window.open('/ismailbouaichi.pdf', '_blank')
   }
 
   return (

@@ -2,20 +2,20 @@
 
 import { Tabs , TabsContent,TabsList,TabsTrigger} from "@/components/ui/tabs";
 import {
-  FaCss3,FaReact,FaLaravel,FaJs,FaHtml5
+  FaCss3,FaReact,FaLaravel,FaJs,FaHtml5,FaGitAlt
 } from "react-icons/fa"
 
-import {SiTailwindcss,SiCsharp,SiMysql} from "react-icons/si"
+import {SiTailwindcss,SiMysql,SiDotnet,SiOdoo,SiSupabase,SiNextdotjs} from "react-icons/si"
 
 import { Tooltip,TooltipContent,TooltipProvider,TooltipTrigger} from "@/components/ui/tooltip";
 
 import { ScrollArea } from "@/components/ui/scroll-area";
 
-import { color, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 const about={
   title:"About me",
-  description:"I am Ismail Bouaichi, 22 years old. I am a specialized technician in software development. Although I don't have extensive experience, I am passionate about the field of technology and I am ready to learn and fully invest myself in all the opportunities that come my way.",
+  description:"I am a Full Stack Developer with expertise in modern web technologies including React.js, Next.js, Laravel, and Odoo. Currently pursuing a Professional Bachelor's Degree at FST Beni Mellal while building scalable web applications. Passionate about creating efficient solutions and continuously learning new technologies to deliver high-quality software.",
   info:[
     {
       fieldName:"Name",
@@ -56,12 +56,27 @@ const exp={
       position:"full stack",
       duration:"40 days"
     },
-      {
+    {
       company:"mandi Tech Info",
       position:"full stack",
+      duration:"7 months"
+    },
+    {
+      company:"Association Des Diabétiques Du Haouz",
+      position:"Web Developer (Odoo)",
       duration:"6 months"
     },
-
+    {
+      company:"Freelance - Naqiago",
+      position:"React Native & Supabase",
+      duration:"3 months"
+    },
+    {
+      company:"Freelance - Bricollano",
+      position:"React Native & Next.js",
+      duration:"3 months"
+    },
+      
   ]
 }
 
@@ -70,6 +85,11 @@ const education={
   title:'My education',
   description:"This Is My Education Path",
   items:[
+    {
+      isntitution:"FST Beni Mellal",
+      degree:"Professional Bachelor's Degree",
+      duration:"2025 - Now"
+    },
     {
       isntitution:"OFPPT",
       degree:"specialized technician in software development",
@@ -111,6 +131,11 @@ const skills={
       color:'#61dafb'
     },
     {
+      icon: <SiNextdotjs/>,
+      name:'Next.js',
+      color:'#000000'
+    },
+    {
       icon: <FaLaravel/>,
       name:'laravel',
       color:'#ff2d20'
@@ -125,11 +150,30 @@ const skills={
       name:'tailwind.css',
       color:'#43a8b2'
     },
-
     {
-      icon: <SiCsharp/>,
-      name:'csharp',
-      color:'#a179dc'
+      icon: <SiDotnet/>,
+      name:'C#',
+      color:'#512BD4'
+    },
+    {
+      icon: <FaReact/>,
+      name:'React Native',
+      color:'#61dafb'
+    },
+    {
+      icon: <SiOdoo/>,
+      name:'Odoo',
+      color:'#714B67'
+    },
+    {
+      icon: <SiSupabase/>,
+      name:'Supabase',
+      color:'#3ECF8E'
+    },
+    {
+      icon: <FaGitAlt/>,
+      name:'Git',
+      color:'#F05032'
     },
   
   ]

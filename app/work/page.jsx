@@ -22,7 +22,27 @@ const projects =[
   {
     num:'01',
     category:'fullstack',
-    tittle:'project 1',
+    tittle:'Bricollano',
+    description:"A comprehensive service marketplace application that connects users with verified professionals for various home and personal services. From cleaning and plumbing to painting and repairs, users can discover services, book appointments, track bookings, and make secure payments through multiple payment methods including cryptocurrency.",
+    stack:[{name:"React Native"},{name:"Supabase"},{name:"Next.js"},{name:"Stripe"},{name:"Cryptocurrency"}],
+    image:'/assets/work/thumb1.png',
+    live:"",
+    github:"https://github.com/ismailbouaich/theApp"
+  },
+  {
+    num:'02',
+    category:'fullstack',
+    tittle:'Naqiago',
+    description:"A modern mobile application that transforms how users find and book professional services. Built with React Native and powered by Supabase backend, it offers seamless booking experiences with real-time updates, map-based provider discovery, and comprehensive service management.",
+    stack:[{name:"React Native"},{name:"Supabase"},{name:"Real-time Updates"},{name:"Maps Integration"},{name:"Payment Gateway"}],
+    image:'/assets/work/naqiago/main_pic.png',
+    live:"",
+    github:"https://github.com/ismailbouaich/NQago"
+  },
+  {
+    num:'03',
+    category:'fullstack',
+    tittle:'Car Rental',
     description:"A Car Rent Project that made By Me ,End to End Project",
     stack:[{name:"Html5"},{name:"Css3"},{name:"Javascript"},{name:"Laravel"},{name:"Bootstrap"}],
     image:'/assets/work/thumb1.png',
@@ -30,9 +50,9 @@ const projects =[
     github:"https://github.com/ismailbouaich/location_voitures"
   },
   {
-    num:'02',
+    num:'04',
     category:'fullstack',
-    tittle:'project 2',
+    tittle:'E-commerce',
     description:"A E-commerce Web Site  that made By Me ,End to End Project",
     stack:[{name:"Laravel"},{name:"LiveWire"},{name:"Html5"},{name:"Css3"},{name:"ReactJs"},{name:"Javascript"},{name:"TailwindCss"},{name:"Redux"}],
     image:'/assets/work/thumb3.png',
