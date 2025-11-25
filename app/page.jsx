@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-
+"use client"
 import React from 'react'
 
 import { Button } from '@/components/ui/button'
@@ -10,6 +10,8 @@ import Social from '@/components/Social';
 import Photo from '@/components/Photo';
 import Stats from '@/components/Stats';
 import DownloadButton from '@/components/DownloadButton';
+import { TypeAnimation } from 'react-type-animation';
+
 const Home = () => {
 return(
   <section className="h-ful">
@@ -17,7 +19,21 @@ return(
       <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-6 xl:pb-20">
         <div className="text-center xl:text-left order-2 xl:order-none">
           <span className="text-xl text-black/80 ">
-            Software Developer
+            <TypeAnimation
+              sequence={[
+                'Software Developer',
+                2000,
+                'Full Stack Developer',
+                2000,
+                'React Native Developer',
+                2000,
+                'Odoo Developer',
+                2000,
+              ]}
+              wrapper="span"
+              speed={50}
+              repeat={Infinity}
+            />
           </span>
           <h1 className="h1 text-black/80">Hello I'm <br />
            <span className="text-accent">

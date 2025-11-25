@@ -9,14 +9,27 @@ const StarBackground = () => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     let animationFrameId;
+    let mouse = { x: null, y: null };
 
     // Set canvas size
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    const handleResize = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    // Mouse interaction
+    const handleMouseMove = (event) => {
+      mouse.x = event.x;
+      mouse.y = event.y;
+    };
+    window.addEventListener('mousemove', handleMouseMove);
 
     // Star properties
     const stars = [];
     const starCount = 100;
+    const connectionDistance = 100;
 
     // Create stars
     for (let i = 0; i < starCount; i++) {
@@ -24,7 +37,8 @@ const StarBackground = () => {
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
         size: Math.random() * 2,
-        speed: Math.random() * 0.5
+        speedX: (Math.random() - 0.5) * 0.5,
+        speedY: (Math.random() - 0.5) * 0.5
       });
     }
 
@@ -39,13 +53,44 @@ const StarBackground = () => {
         ctx.fill();
 
         // Move star
-        star.y += star.speed;
+        star.x += star.speedX;
+        star.y += star.speedY;
 
-        // Reset star position if it goes off screen
-        if (star.y > canvas.height) {
-          star.y = 0;
-          star.x = Math.random() * canvas.width;
+        // Bounce off edges
+        if (star.x < 0 || star.x > canvas.width) star.speedX *= -1;
+        if (star.y < 0 || star.y > canvas.height) star.speedY *= -1;
+
+        // Connect to mouse
+        if (mouse.x != null) {
+          const dx = star.x - mouse.x;
+          const dy = star.y - mouse.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+
+          if (distance < connectionDistance) {
+            ctx.strokeStyle = `rgba(0, 0, 0, ${1 - distance / connectionDistance})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(star.x, star.y);
+            ctx.lineTo(mouse.x, mouse.y);
+            ctx.stroke();
+          }
         }
+
+        // Connect to other stars
+        stars.forEach(otherStar => {
+          const dx = star.x - otherStar.x;
+          const dy = star.y - otherStar.y;
+          const distance = Math.sqrt(dx * dx + dy * dy);
+
+          if (distance < connectionDistance) {
+            ctx.strokeStyle = `rgba(0, 0, 0, ${0.1 * (1 - distance / connectionDistance)})`;
+            ctx.lineWidth = 0.5;
+            ctx.beginPath();
+            ctx.moveTo(star.x, star.y);
+            ctx.lineTo(otherStar.x, otherStar.y);
+            ctx.stroke();
+          }
+        });
       });
 
       animationFrameId = requestAnimationFrame(animate);
@@ -56,6 +101,8 @@ const StarBackground = () => {
     // Clean up
     return () => {
       cancelAnimationFrame(animationFrameId);
+      window.removeEventListener('resize', handleResize);
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 

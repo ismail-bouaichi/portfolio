@@ -22,7 +22,7 @@ const Photo = () => {
         initial={{opacity:0}}
         animate={{
             opacity:1,
-            transition:{delay:2.4,duration:0.5,ease:"easeInOut"},
+            transition:{delay:1.4,duration:0.5,ease:"easeInOut"},
         }}
         className="w-[300px] h-[300px] xl:w-[500px] xl:h-[500px]  absolute  ">
             <Image src="/assets/the_best_one.png" priority alt="" quality={50} fill 

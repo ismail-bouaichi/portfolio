@@ -2,43 +2,65 @@ import { animate, delay, motion } from "framer-motion"
 
 
 
-const stairAnimation={
-initial:{
-    top:"0%",
-},
-animate:{
-    top:"100%",
-},
-exit:{
-    top:["100%","0%"],
-}
+const stairAnimation = {
+  initial: {
+    scaleX: 1,
+  },
+  animate: (index) => {
+    // Center indices are 3 and 4 for 8 steps
+    // We want center to animate first (open)
+    const center = 3.5;
+    const delay = Math.abs(index - center) * 0.1;
+    
+    return {
+      scaleX: 0,
+      transition: {
+        duration: 0.4,
+        ease: "easeInOut",
+        delay: delay,
+      },
+    };
+  },
+  exit: (index) => {
+    // We want outside to animate first (close)
+    const center = 3.5;
+    // Max distance is 3.5. Reverse it.
+    const delay = (3.5 - Math.abs(index - center)) * 0.1;
+    
+    return {
+      scaleX: 1,
+      transition: {
+        duration: 0.4,
+        ease: "easeInOut",
+        delay: delay,
+      },
+    };
+  },
 };
-
-const reversIndex=(index)=>{
-const totalSteps=6;
-return totalSteps - index-1;
-}
 
 const Stairs = () => {
   return (
-   <>
-   {/*render 6 motion divs ,each representing a step of the stairs*/}
+    <>
+      {/*render 8 motion divs ,each representing a step of the stairs*/}
 
-    {[...Array(6)].map((_,index)=>{
-       return(
-    <motion.div key={index} variants={stairAnimation} initial="initial" animate="animate" exit="exit" transition={{
-        duration:0.4,
-        ease:"easeInOut",
-        delay:reversIndex(index)*0.1,
-    }}
-    className="h-full w-full bg-black relative"
-    />
-);
-
-    })}
-   
-   </>
-  )
-}
+      {[...Array(8)].map((_, index) => {
+        return (
+          <motion.div
+            key={index}
+            variants={stairAnimation}
+            initial="initial"
+            animate="animate"
+            exit="exit"
+            custom={index}
+            className="h-full w-full bg-black relative"
+            style={{
+                transformOrigin: index < 4 ? "left" : "right"
+            }}
+          />
+        );
+      })}
+    </>
+  );
+};
 
 export default Stairs
