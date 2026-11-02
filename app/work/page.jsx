@@ -14,6 +14,15 @@ import { useLanguage } from "@/context/LanguageContext";
 const projectsBase = [
   {
     num: "01",
+    category: "SaaS",
+    tittle: "GT Management",
+    stack: [{ name: "Laravel" }, { name: "Next.js" }, { name: "MySQL" }, { name: "Multi-tenant" }, { name: "Docker" }],
+    image: "/assets/work/gt-management.png",
+    live: "https://ismailbouaichi.com",
+    github: "",
+  },
+  {
+    num: "02",
     category: "fullstack",
     tittle: "Bricollano",
     stack: [{ name: "React Native" }, { name: "Supabase" }, { name: "Next.js" }, { name: "Stripe" }, { name: "Cryptocurrency" }],
@@ -22,7 +31,7 @@ const projectsBase = [
     github: "https://github.com/ismailbouaich/theApp",
   },
   {
-    num: "02",
+    num: "03",
     category: "fullstack",
     tittle: "Naqiago",
     stack: [{ name: "React Native" }, { name: "Supabase" }, { name: "Real-time Updates" }, { name: "Maps Integration" }, { name: "Payment Gateway" }],
@@ -31,7 +40,7 @@ const projectsBase = [
     github: "https://github.com/ismailbouaich/NQago",
   },
   {
-    num: "03",
+    num: "04",
     category: "fullstack",
     tittle: "Car Rental",
     stack: [{ name: "Html5" }, { name: "Css3" }, { name: "Javascript" }, { name: "Laravel" }, { name: "Bootstrap" }],
@@ -40,20 +49,20 @@ const projectsBase = [
     github: "https://github.com/ismailbouaich/location_voitures",
   },
   {
-    num: "04",
+    num: "05",
     category: "fullstack",
     tittle: "E-commerce",
     stack: [{ name: "Laravel" }, { name: "LiveWire" }, { name: "Html5" }, { name: "Css3" }, { name: "ReactJs" }, { name: "Javascript" }, { name: "TailwindCss" }, { name: "Redux" }],
-    image: "/assets/work/thumb3.png",
-    live: "notch-tech.com",
+    image: "/assets/work/notch.png",
+    live: "https://notch-tech.com",
     github: "https://github.com/ismailbouaich/e-comRL",
   },
   {
-    num: "05",
+    num: "06",
     category: "fullstack",
     tittle: "reliferesidences",
     stack: [{ name: "odoo" }, { name: "python" }, { name: "javascript" }, { name: "html5" }, { name: "css3" }],
-    image: "/assets/work/thumb3.png",
+    image: "/assets/work/relief.png",
     live: "",
     github: "",
   },
@@ -103,7 +112,8 @@ const Work = () => {
               </ul>
               <div className="border border-white/20"></div>
               <div className="flex items-center gap-4">
-                <Link href={project.live}>
+                {project.live && (
+                <Link href={project.live} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -115,8 +125,10 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+                )}
 
-                <Link href={project.github}>
+                {project.github && (
+                <Link href={project.github} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -128,6 +140,7 @@ const Work = () => {
                     </Tooltip>
                   </TooltipProvider>
                 </Link>
+                )}
               </div>
             </div>
           </div>

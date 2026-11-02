@@ -4,23 +4,27 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   FaCss3, FaReact, FaLaravel, FaJs, FaHtml5, FaGitAlt,
 } from "react-icons/fa";
-import { SiTailwindcss, SiMysql, SiDotnet, SiOdoo, SiSupabase, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiMysql, SiDotnet, SiOdoo, SiSupabase, SiNextdotjs, SiDocker, SiPhp } from "react-icons/si";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 import { useLanguage } from "@/context/LanguageContext";
 
+// Newest first; positions and durations are in translations/*.js (same order).
 const expCompanies = [
-  "solution dev",
-  "smart influencer",
-  "mandi Tech Info",
-  "Association Des Diabétiques Du Haouz",
-  "LCD inovation",
-  "Freelance - Naqiago",
+  "YOMAX",
   "Freelance - Bricollano",
+  "Freelance - Naqiago",
+  "LCD Innovation",
+  "Association Des Diabétiques Du Haouz",
+  "Mandi Tech Info",
+  "Smart Influencer",
+  "Solution Dev",
 ];
 
 const educationInstitutions = [
+  "Certiport (Pearson VUE) - code w948m-H9sk",
+  "Certiport (Pearson VUE) - code MQ4y-s4NX",
   "FST Beni Mellal",
   "OFPPT",
   "Sahnone High School",
@@ -33,6 +37,8 @@ const skillList = [
   { icon: <FaReact />, name: "react.js", color: "#61dafb" },
   { icon: <SiNextdotjs />, name: "Next.js", color: "#000000" },
   { icon: <FaLaravel />, name: "laravel", color: "#ff2d20" },
+  { icon: <SiPhp />, name: "php", color: "#777BB4" },
+  { icon: <SiDocker />, name: "docker", color: "#2496ED" },
   { icon: <SiMysql />, name: "sql", color: "#00618a" },
   { icon: <SiTailwindcss />, name: "tailwind.css", color: "#43a8b2" },
   { icon: <SiDotnet />, name: "C#", color: "#512BD4" },

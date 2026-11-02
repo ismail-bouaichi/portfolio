@@ -8,13 +8,13 @@ export const fr = {
     hireMe: "Engagez-moi",
   },
   home: {
-    role1: "Développeur Logiciel",
-    role2: "Développeur Full Stack",
-    role3: "Développeur React Native",
-    role4: "Développeur Odoo",
+    role1: "Développeur Full Stack Laravel / Next.js",
+    role2: "Développeur SaaS & ERP",
+    role3: "Développeur Odoo",
+    role4: "Développeur React Native",
     greeting: "Bonjour, je suis",
     description:
-      "Bienvenue sur mon portfolio — j'ai fait de mon mieux pour vous présenter mes compétences et mes projets en développement web.",
+      "Je conçois des applications de gestion en Laravel et Next.js : ERP, stock, facturation. Créateur de GT Management, un ERP SaaS en production. Disponible en freelance, 100 % à distance.",
     downloadCV: "Télécharger CV",
   },
   stats: {
@@ -52,7 +52,7 @@ export const fr = {
     about: {
       title: "À propos de moi",
       description:
-        "Je suis un Développeur Full Stack avec une expertise dans les technologies web modernes incluant React.js, Next.js, Laravel et Odoo. Actuellement en Licence Professionnelle à la FST Béni Mellal, je développe des applications web évolutives. Passionné par la création de solutions efficaces et l'apprentissage continu de nouvelles technologies pour livrer des logiciels de qualité.",
+        "Développeur Full Stack spécialisé dans les applications de gestion : ERP, stock, facturation et comptabilité. J'ai conçu et je fais tourner GT Management, un ERP SaaS multi-entreprises en Laravel et Next.js. Je développe aussi sur Odoo en entreprise. Basé à Marrakech, sur le même fuseau horaire que la France, disponible en freelance.",
       nameLabel: "Nom",
       nationalityLabel: "Nationalité",
       nationalityValue: "Marocain",
@@ -63,20 +63,23 @@ export const fr = {
       title: "Mon expérience",
       description: "L'expérience professionnelle que j'ai accumulée au fil des années",
       items: [
-        { position: "Développeur Full Stack", duration: "1 mois" },
-        { position: "Développeur Full Stack", duration: "40 jours" },
-        { position: "Développeur Full Stack", duration: "7 mois" },
-        { position: "Développeur Web (Odoo)", duration: "6 mois" },
-        { position: "Développeur Web (Odoo) & Full Stack", duration: "6 mois" },
-        { position: "Développeur React Native & Supabase", duration: "3 mois" },
+        { position: "Développeur Odoo", duration: "Déc. 2025 - Présent" },
         { position: "Développeur React Native & Next.js", duration: "3 mois" },
+        { position: "Développeur React Native & Supabase", duration: "3 mois" },
+        { position: "Développeur Web (Odoo) & Full Stack", duration: "8 mois" },
+        { position: "Développeur Web (Odoo)", duration: "6 mois" },
+        { position: "Développeur Full Stack Laravel", duration: "7 mois" },
+        { position: "Développeur Full Stack", duration: "40 jours" },
+        { position: "Développeur Full Stack", duration: "1 mois" },
       ],
     },
     education: {
       title: "Ma formation",
       description: "Mon parcours académique",
       items: [
-        { degree: "Licence Professionnelle", duration: "2025 - Présent" },
+        { degree: "IT Specialist - Java (certification)", duration: "Juillet 2026" },
+        { degree: "IT Specialist - Software Development (certification)", duration: "Juin 2026" },
+        { degree: "Licence Professionnelle Développement Web et Applications Mobiles", duration: "2025 - 2026" },
         {
           degree: "Technicien Spécialisé en Développement Logiciel",
           duration: "2020 - 2023",
@@ -91,9 +94,9 @@ export const fr = {
   },
   services: [
     {
-      title: "Développement Full Stack",
+      title: "Applications de gestion & SaaS",
       description:
-        "Développement d'applications web de bout en bout, de la conception de la base de données à l'implémentation de l'interface utilisateur.",
+        "ERP, stock, facturation, espaces clients : des applications Laravel et Next.js conçues, déployées et maintenues de bout en bout.",
     },
     {
       title: "Développement Frontend",
@@ -116,6 +119,10 @@ export const fr = {
     liveProject: "Projet en ligne",
     githubRepo: "Dépôt Github",
     projects: [
+      {
+        description:
+          "ERP SaaS multi-entreprises pour les PME marocaines : devis, factures, stock multi-entrepôts, caisse et comptabilité au plan comptable marocain. Chaque client a son sous-domaine et sa base de données. Conçu, développé et déployé de bout en bout.",
+      },
       {
         description:
           "Une application marketplace complète qui met en relation des utilisateurs avec des professionnels vérifiés pour divers services à domicile. Du nettoyage à la plomberie, les utilisateurs peuvent découvrir des services, réserver des rendez-vous et effectuer des paiements sécurisés via plusieurs méthodes incluant la cryptomonnaie.",
