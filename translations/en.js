@@ -63,10 +63,9 @@ export const en = {
       title: "My experience",
       description: "This is the experience I've collected over the years",
       items: [
-        { position: "Odoo Developer", duration: "Dec 2025 - Now" },
+        { position: "Odoo & Web Developer", duration: "Dec 2025 - Now" },
         { position: "React Native & Next.js Developer", duration: "3 months" },
         { position: "React Native & Supabase Developer", duration: "3 months" },
-        { position: "Web Developer (Odoo) & Full Stack", duration: "8 months" },
         { position: "Web Developer (Odoo)", duration: "6 months" },
         { position: "Full Stack Laravel Developer", duration: "7 months" },
         { position: "Full Stack Developer", duration: "40 days" },

@@ -63,10 +63,9 @@ export const fr = {
       title: "Mon expérience",
       description: "L'expérience professionnelle que j'ai accumulée au fil des années",
       items: [
-        { position: "Développeur Odoo", duration: "Déc. 2025 - Présent" },
+        { position: "Développeur Odoo & Web", duration: "Déc. 2025 - Présent" },
         { position: "Développeur React Native & Next.js", duration: "3 mois" },
         { position: "Développeur React Native & Supabase", duration: "3 mois" },
-        { position: "Développeur Web (Odoo) & Full Stack", duration: "8 mois" },
         { position: "Développeur Web (Odoo)", duration: "6 mois" },
         { position: "Développeur Full Stack Laravel", duration: "7 mois" },
         { position: "Développeur Full Stack", duration: "40 jours" },
