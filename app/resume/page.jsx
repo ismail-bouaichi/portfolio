@@ -12,10 +12,9 @@ import { useLanguage } from "@/context/LanguageContext";
 
 // Newest first; positions and durations are in translations/*.js (same order).
 const expCompanies = [
-  "YOMAX",
+  "YOMAX (LCD Innovation)",
   "Freelance - Bricollano",
   "Freelance - Naqiago",
-  "LCD Innovation",
   "Association Des Diabétiques Du Haouz",
   "Mandi Tech Info",
   "Smart Influencer",
