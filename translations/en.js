@@ -8,13 +8,13 @@ export const en = {
     hireMe: "Hire Me",
   },
   home: {
-    role1: "Software Developer",
-    role2: "Full Stack Developer",
-    role3: "React Native Developer",
-    role4: "Odoo Developer",
+    role1: "Full Stack Laravel / Next.js Developer",
+    role2: "SaaS & ERP Developer",
+    role3: "Odoo Developer",
+    role4: "React Native Developer",
     greeting: "Hello I'm",
     description:
-      "And This is My Portfolio — I've done my best to represent myself and my skills in this web app.",
+      "I build business applications with Laravel and Next.js: ERP, inventory, invoicing. Creator of GT Management, a SaaS ERP in production. Available for freelance work, fully remote.",
     downloadCV: "Download CV",
   },
   stats: {
@@ -52,7 +52,7 @@ export const en = {
     about: {
       title: "About me",
       description:
-        "I am a Full Stack Developer with expertise in modern web technologies including React.js, Next.js, Laravel, and Odoo. Currently pursuing a Professional Bachelor's Degree at FST Beni Mellal while building scalable web applications. Passionate about creating efficient solutions and continuously learning new technologies to deliver high-quality software.",
+        "Full Stack Developer focused on business applications: ERP, inventory, invoicing and accounting. I designed and run GT Management, a multi-tenant SaaS ERP built with Laravel and Next.js, and I work on Odoo in production. Based in Marrakech, in the same time zone as France, available for freelance work.",
       nameLabel: "Name",
       nationalityLabel: "Nationality",
       nationalityValue: "Moroccan",
@@ -63,20 +63,23 @@ export const en = {
       title: "My experience",
       description: "This is the experience I've collected over the years",
       items: [
-        { position: "Full Stack Developer", duration: "1 month" },
-        { position: "Full Stack Developer", duration: "40 days" },
-        { position: "Full Stack Developer", duration: "7 months" },
-        { position: "Web Developer (Odoo)", duration: "6 months" },
-        { position: "Web Developer (Odoo) & Full Stack", duration: "6 months" },
-        { position: "React Native & Supabase Developer", duration: "3 months" },
+        { position: "Odoo Developer", duration: "Dec 2025 - Now" },
         { position: "React Native & Next.js Developer", duration: "3 months" },
+        { position: "React Native & Supabase Developer", duration: "3 months" },
+        { position: "Web Developer (Odoo) & Full Stack", duration: "8 months" },
+        { position: "Web Developer (Odoo)", duration: "6 months" },
+        { position: "Full Stack Laravel Developer", duration: "7 months" },
+        { position: "Full Stack Developer", duration: "40 days" },
+        { position: "Full Stack Developer", duration: "1 month" },
       ],
     },
     education: {
       title: "My education",
       description: "My academic path",
       items: [
-        { degree: "Professional Bachelor's Degree", duration: "2025 - Now" },
+        { degree: "IT Specialist - Java (certification)", duration: "July 2026" },
+        { degree: "IT Specialist - Software Development (certification)", duration: "June 2026" },
+        { degree: "Professional Bachelor's Degree in Web & Mobile Development", duration: "2025 - 2026" },
         {
           degree: "Specialized Technician in Software Development",
           duration: "2020 - 2023",
@@ -91,9 +94,9 @@ export const en = {
   },
   services: [
     {
-      title: "Full Stack Development",
+      title: "Business apps & SaaS",
       description:
-        "End-to-end web application development, from database design to user interface implementation.",
+        "ERP, inventory, invoicing, client portals: Laravel and Next.js applications designed, deployed and maintained end to end.",
     },
     {
       title: "Frontend Development",
@@ -116,6 +119,10 @@ export const en = {
     liveProject: "Live Project",
     githubRepo: "Github repository",
     projects: [
+      {
+        description:
+          "Multi-tenant SaaS ERP for Moroccan SMEs: quotes, invoices, multi-warehouse inventory, point of sale and accounting on the Moroccan chart of accounts. Each client gets its own subdomain and database. Designed, built and deployed end to end.",
+      },
       {
         description:
           "A comprehensive service marketplace application that connects users with verified professionals for various home and personal services. From cleaning and plumbing to painting and repairs, users can discover services, book appointments, track bookings, and make secure payments through multiple payment methods including cryptocurrency.",

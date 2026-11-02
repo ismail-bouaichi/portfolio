@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 import { useLanguage } from "@/context/LanguageContext";
 
 const statKeys = [
-  { num: 12, textKey: "stats.experience" },
+  { num: 2, textKey: "stats.experience" },
   { num: 26, textKey: "stats.projects" },
   { num: 8, textKey: "stats.technologies" },
   { num: 500, textKey: "stats.commits" },
